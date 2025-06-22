@@ -37,6 +37,7 @@ This project allows multiple users to join a room and chat in real time with ins
 1. Clone the repository
 2. npm install
 3. node server.js
-4. http://localhost:3000
+4. Open your browser and go to:
+   http://localhost:3000
 
 
