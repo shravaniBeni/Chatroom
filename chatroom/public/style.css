@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #1c1c1c;
+
+  color: #fff;
+}
+svg {
+  color: white;
+}
+.chat-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 600px;
+  /* margin-bottom: 20px; */
+}
+
+.brand svg {
+  width: 30px;
+  height: 30px;
+  border: white 2px solid;
+  margin-right: 10px;
+  border-radius: 2rem; /* Optional for a rounded look */
+  color: white;
+
+  /*
+     Placeholder color */
+}
+
+.brand h1 {
+  font-size: 28px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+/* Message area styling */
+.msg-area {
+  width: 100%;
+  max-width: 600px;
+  background-color: #333; /* Darker chat background */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.msg {
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  color: #fff;
+  max-width: 80%;
+}
+
+.incoming {
+  background-color: #2c2c2c;
+  align-self: flex-start;
+  border-left: 5px solid #fff;
+  text-align: left;
+}
+
+.outgoing {
+  background-color: #4a4a4a;
+  align-self: flex-end;
+  border-right: 5px solid #fff;
+  text-align: right;
+}
+
+.msg h4 {
+  margin: 0 0 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #f0f0f0;
+}
+
+.msg p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+/* Input field styling */
+#text {
+  margin-top: 10px;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 30px;
+  width: 100%;
+  font-size: 16px;
+  background-color: #2c2c2c;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  outline: none;
+  align-self: center;
+}
+
+#text::placeholder {
+  color: #aaa;
+}
+
+/* Hover and active effects */
+#text:hover,
+#text:focus {
+  background-color: #444;
+  transition: background-color 0.2s ease-in-out;
+}
